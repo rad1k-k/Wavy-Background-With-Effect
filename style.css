@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wv-container {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #c0392b, #8e44ad), url(img/img\ \(5\).jpg);
+    color: #fff;
+    background-blend-mode: screen; 
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+.wv-container svg {
+    display: block;
+    transform-origin: bottom;
+    animation: animateWave 3s infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        transform: scale(1,0.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+
